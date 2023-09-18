@@ -77,7 +77,7 @@ function startGame() {
             time = 0;
         }
 
-        timeElement.innerText = time;
+        timeElement.innerText = 'Time: ' + time;
 
         if (time <= 0) {
             clearInterval(timer);
