@@ -1,0 +1,89 @@
+.hide {
+    display: none;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: 15px;
+}
+
+p {
+    text-align: center;
+    display: block;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+}
+
+.question-wrap {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: 15px;
+}
+
+.question-wrap h2 {
+    margin: 20px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.choices button {
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+    font-size: 18px;
+    color: #fff;
+    background-color: blue;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+.choices .choice-popup {
+    position: absolute;
+    margin: 40px;
+    bottom: 0;
+}
+
+#show-scores {
+    margin: 15px;
+}
+
+.scores-output {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+}
