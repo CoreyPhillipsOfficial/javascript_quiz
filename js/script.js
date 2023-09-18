@@ -6,6 +6,7 @@ var questionWrap = document.querySelector('.question-wrap');
 var questionTextEl = document.querySelector('.question-wrap h2');
 var choiceDiv = document.querySelector('.choices');
 var choicePopup = document.querySelector('.choice-popup');
+var outOfTime = document.querySelector('.out-of-time');
 var time = 60;
 var questionIndex = 0;
 var question;
@@ -83,12 +84,13 @@ function startGame() {
             clearInterval(timer);
             time = 0;
 
-            questionWrap.classList.add('hide');
+            questionWrap.style.display = 'none';
             questionTextEl.classList.add('hide');
             timeElement.classList.add('hide');
             choiceDiv.classList.add('hide');
+            outOfTime.classList.remove('hide');
 
-            // choicePopup.innerText = 'Out of time!';
+            // outOfTime.innerText = .outOfTime;
         }
 
     }, 1000)

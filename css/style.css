@@ -99,3 +99,12 @@ button {
     padding: 15px;
     margin: 15px;
 }
+
+.out-of-time h3 {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: 15px;
+    color: red;
+    font-size: 60px;
+}
