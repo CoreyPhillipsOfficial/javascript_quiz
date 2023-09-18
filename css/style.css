@@ -108,3 +108,29 @@ button {
     color: red;
     font-size: 60px;
 }
+
+#scoresOutputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#clear-scores {
+    text-align: center;
+    display: block;
+    align-items: center;
+    margin: 15px;
+}
+
+.scores-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.scores-output div p {
+    margin-bottom: 30px;
+    margin-top: -1px;
+}
