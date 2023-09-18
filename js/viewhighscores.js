@@ -7,18 +7,20 @@ var score = localStorage.getItem('score');
 
 
 function getHighscores() {
-    return JSON.parse(localStorage.getItem('highschores')) || [];
+    return JSON.parse(localStorage.getItem('highscores')) || [];
 }
 
-function saveHighscore() {
-    var nameInput = document.querySelector('#name-input')
+function saveHighscore(event) {
+    event.preventDefault();
+    var nameInput = document.querySelector('#name-input');
     var name = nameInput.value;
+    var currentScore = localStorage.getItem('score');
 
     var highscores = getHighscores();
 
     highscores.push({
         name: name,
-        score: score
+        score: currentScore
     })
 
     localStorage.setItem('highscores', JSON.stringify(highscores));
@@ -51,6 +53,6 @@ function showScore() {
     scoreOutput.innerText = 'Your high score: ' + score;
 }
 
-showScore();
 showScoresBtn.addEventListener('click', showScoreOutput);
 scoreForm.addEventListener('submit', saveHighscore);
+showScore();
